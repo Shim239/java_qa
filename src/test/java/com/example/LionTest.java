@@ -43,9 +43,8 @@ public class LionTest {
         assertEquals(expectedResult, actualResult);
     }
 
-    @Test(expected = Exception.class)
-    public void doesHaveManeMethodExeptionBranch() throws Exception {
+    @Test (expected = Exception.class)
+    public void createLionWithMissingSexExpectException() throws Exception {
         Lion lion = new Lion("qwerty", mockFeline);
-        lion.doesHaveMane();
     }
 }

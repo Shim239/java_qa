@@ -31,7 +31,7 @@ public class CatTest {
     @Test
     public void getFoodMethodPositiveResult() throws Exception {
         Cat cat = new Cat(feline);
-        Mockito.when(cat.getFood()).thenReturn(List.of("Животные", "Птицы", "Рыба"));
+        Mockito.when(feline.eatMeat()).thenReturn(List.of("Животные", "Птицы", "Рыба"));
         List<String> expectedResult = List.of("Животные", "Птицы", "Рыба");
         List<String> actualResult = cat.getFood();
         assertEquals(expectedResult, actualResult);
